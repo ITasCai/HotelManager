@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="frmGuestRecode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmGuestRecode.Designer.cs">
+      <DependentUpon>frmGuestRecode.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmLogin.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -58,22 +64,43 @@
     <Compile Include="frmMain.Designer.cs">
       <DependentUpon>frmMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRoom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRoom.Designer.cs">
+      <DependentUpon>frmRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRoomType.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="frmRoomType.Designer.cs">
       <DependentUpon>frmRoomType.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmRppmInfo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRppmInfo.Designer.cs">
+      <DependentUpon>frmRppmInfo.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmGuestRecode.resx">
+      <DependentUpon>frmGuestRecode.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmRoom.resx">
+      <DependentUpon>frmRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRoomType.resx">
       <DependentUpon>frmRoomType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRppmInfo.resx">
+      <DependentUpon>frmRppmInfo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -110,6 +137,10 @@
       <Project>{2981907e-5524-457e-a23b-77181bf98646}</Project>
       <Name>HotelManagerModel</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\icon_information_32x.gif" />
+    <Content Include="images\icon_warning_32x.gif" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

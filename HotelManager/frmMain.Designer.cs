@@ -30,9 +30,9 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.基础设置ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tsmGuest = new System.Windows.Forms.ToolStripMenuItem();
             this.tspfjlx = new System.Windows.Forms.ToolStripMenuItem();
             this.tsproom = new System.Windows.Forms.ToolStripMenuItem();
+            this.tsmGuest = new System.Windows.Forms.ToolStripMenuItem();
             this.tsprzdj = new System.Windows.Forms.ToolStripMenuItem();
             this.tsmGuestRecord = new System.Windows.Forms.ToolStripMenuItem();
             this.tsprzxyck = new System.Windows.Forms.ToolStripMenuItem();
@@ -59,6 +59,20 @@
             this.基础设置ToolStripMenuItem.Size = new System.Drawing.Size(68, 21);
             this.基础设置ToolStripMenuItem.Text = "基础设置";
             // 
+            // tspfjlx
+            // 
+            this.tspfjlx.Name = "tspfjlx";
+            this.tspfjlx.Size = new System.Drawing.Size(148, 22);
+            this.tspfjlx.Text = "房间类型登记";
+            this.tspfjlx.Click += new System.EventHandler(this.tspfjlx_Click);
+            // 
+            // tsproom
+            // 
+            this.tsproom.Name = "tsproom";
+            this.tsproom.Size = new System.Drawing.Size(148, 22);
+            this.tsproom.Text = "房间信息登记";
+            this.tsproom.Click += new System.EventHandler(this.tsproom_Click);
+            // 
             // tsmGuest
             // 
             this.tsmGuest.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -69,30 +83,19 @@
             this.tsmGuest.Size = new System.Drawing.Size(68, 21);
             this.tsmGuest.Text = "业务管理";
             // 
-            // tspfjlx
-            // 
-            this.tspfjlx.Name = "tspfjlx";
-            this.tspfjlx.Size = new System.Drawing.Size(152, 22);
-            this.tspfjlx.Text = "房间类型登记";
-            this.tspfjlx.Click += new System.EventHandler(this.tspfjlx_Click);
-            // 
-            // tsproom
-            // 
-            this.tsproom.Name = "tsproom";
-            this.tsproom.Size = new System.Drawing.Size(152, 22);
-            this.tsproom.Text = "房间信息登记";
-            // 
             // tsprzdj
             // 
             this.tsprzdj.Name = "tsprzdj";
             this.tsprzdj.Size = new System.Drawing.Size(152, 22);
             this.tsprzdj.Text = "入住登记";
+            this.tsprzdj.Click += new System.EventHandler(this.tsprzdj_Click);
             // 
             // tsmGuestRecord
             // 
             this.tsmGuestRecord.Name = "tsmGuestRecord";
             this.tsmGuestRecord.Size = new System.Drawing.Size(152, 22);
             this.tsmGuestRecord.Text = "房间状态查看";
+            this.tsmGuestRecord.Click += new System.EventHandler(this.tsmGuestRecord_Click);
             // 
             // tsprzxyck
             // 
